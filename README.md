@@ -31,11 +31,11 @@ Inside the satellite-property-valuation, make a folder named data.
 
 
 
-Inside the data make a folder named raw.
+Inside the data, make a folder named raw.
 
 
 
-Put the dataset files inside the raw folder, you can find it in the repoitory's release.
+Put the dataset files inside the raw folder, you can find it in the repoitory's initial project release.
 
 
 
