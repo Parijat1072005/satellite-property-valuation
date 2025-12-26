@@ -3,12 +3,10 @@ import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
-from dotenv import load_dotenv
+from google.colab import userdata
 from tqdm import tqdm
 
-# Load environment variables
-load_dotenv()
-MAPBOX_TOKEN = os.getenv("MAPBOX_ACCESS_TOKEN")
+MAPBOX_TOKEN = userdata.get('MAPBOX_ACCESS_TOKEN')
 
 # Configuration for Mapbox
 SAVE_DIR = "data/satellite_images/"
