@@ -1,6 +1,7 @@
 data/raw/
 data/processed/
 data/satellite_images/
+outputs/
 *.zip
 *.pth
 __pycache__/
