@@ -26,6 +26,8 @@ inside the satellite-property-valuation, make a folder named data.
 inside the data make three folders named raw, processed and satellite_images.
 put the dataset files inside the raw folder.
 
+>>!pip install -r satellite-property-valuation/requirements.txt
+
 
 >>%run /content/satellite-property-valuation/src/data_fetcher.py
 
