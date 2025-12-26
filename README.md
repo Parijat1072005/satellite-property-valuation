@@ -22,6 +22,9 @@ Toggle the Notebook access switch to "on" for that secret.
 >>!git clone https://github.com/Parijat1072005/satellite-property-valuation
 
 
+Select the runtime as t4 GPU.
+
+
 inside the satellite-property-valuation, make a folder named data.
 inside the data make three folders named raw, processed and satellite_images.
 put the dataset files inside the raw folder.
