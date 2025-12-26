@@ -63,9 +63,9 @@ def main():
 
     # Load local data
     try:
-        df = pd.read_excel("data/raw/train(1).xlsx")
+        df = pd.read_excel("/content/satellite-property-valuation/data/raw/train(1).xlsx")
     except FileNotFoundError:
-        print("Error: train(1).xlsx not found in data/raw/")
+        print("Error: train(1).xlsx not found in /content/satellite-property-valuation/data/raw/")
         return
     
     print(f"Starting/Resuming download for {len(df)} images...")
