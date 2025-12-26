@@ -55,7 +55,6 @@ def download_satellite_image(lat, lon, property_id):
     }
 
     try:
-        # CRITICAL CHANGE: Use 'session.get' instead of 'requests.get'
         response = session.get(url, params=params, timeout=15)
         
         if response.status_code == 200:
@@ -65,7 +64,6 @@ def download_satellite_image(lat, lon, property_id):
             print(f"\nError {response.status_code} for ID {property_id}")
             
     except Exception as e:
-        # This will catch the Errno 11001 if all 5 retries fail
         print(f"\nFailed to resolve/connect for ID {property_id}: {e}")
 
 def main():
