@@ -2,6 +2,8 @@
 NOTE: MAPBOX STATIC MAP API HAS BEEN USED SO GET THE API KEY OF THE SAME, AND USE GOOGLE COLLAB TO RUN THE FILES.
 
 
+pk.eyJ1IjoiamhhLXBhcmlqYXQiLCJhIjoiY21qbjNmejJ5MHJ2cDNlcGlpZnc1eXF5YyJ9.azskqHRd1Wv8grAGv4bJSQ
+
 Follow the process to get it running in your laptop:
 
 
