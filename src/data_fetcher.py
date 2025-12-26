@@ -9,7 +9,7 @@ from tqdm import tqdm
 MAPBOX_TOKEN = userdata.get('MAPBOX_ACCESS_TOKEN')
 
 # Configuration for Mapbox
-SAVE_DIR = "data/satellite_images/"
+SAVE_DIR = "/content/satellite-property-valuation/data/satellite_images/"
 ZOOM = 17
 WIDTH, HEIGHT = 400, 400
 
