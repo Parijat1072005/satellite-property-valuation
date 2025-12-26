@@ -3,11 +3,22 @@ import pandas as pd
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util import Retry
-from google.colab import userdata
 from tqdm import tqdm
 
-MAPBOX_TOKEN = userdata.get('MAPBOX_ACCESS_TOKEN')
+# --- COLAB SECRET HANDLING ---
+try:
+    from google.colab import userdata
+    MAPBOX_TOKEN = userdata.get('MAPBOX_ACCESS_TOKEN')
+    print("Successfully loaded Mapbox Token from Colab Secrets.")
+except ImportError:
+    # Fallback for local environment
+    from dotenv import load_dotenv
+    load_dotenv()
+    MAPBOX_TOKEN = os.getenv("MAPBOX_ACCESS_TOKEN")
 
+# --- VERIFY TOKEN ---
+if not MAPBOX_TOKEN:
+    raise ValueError("MAPBOX_ACCESS_TOKEN not found! Check Colab Secrets.")
 # Configuration for Mapbox
 SAVE_DIR = "/content/satellite-property-valuation/data/satellite_images/"
 ZOOM = 17
