@@ -1,0 +1,27 @@
+# Data Handling & Math
+pandas
+numpy
+openpyxl
+python-dotenv
+tqdm
+
+# Machine Learning & Visualization
+scikit-learn
+matplotlib
+seaborn
+
+# Geospatial Analysis
+geopandas
+shapely
+requests
+
+# Image Processing & Deep Learning
+opencv-python
+pillow
+torch
+torchvision
+torchaudio
+git+https://github.com/jacobgil/pytorch-grad-cam
+
+# Jupyter Support (for .ipynb files in VS Code)
+ipykernel
