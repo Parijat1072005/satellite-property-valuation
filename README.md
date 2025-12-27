@@ -31,7 +31,7 @@ Inside the satellite-property-valuation, make a folder named data.
 
 
 
-Inside the data, make a folder named raw.
+Inside the data, make a folder named "raw" and another folder named "processed".
 
 
 
