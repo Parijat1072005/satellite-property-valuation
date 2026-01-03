@@ -20,7 +20,7 @@ except ImportError:
 if not MAPBOX_TOKEN:
     raise ValueError("MAPBOX_ACCESS_TOKEN not found! Check Colab Secrets.")
 # Configuration for Mapbox
-SAVE_DIR = "/data/satellite_images/"
+SAVE_DIR = "data/satellite_images/"
 ZOOM = 17
 WIDTH, HEIGHT = 400, 400
 
@@ -72,9 +72,9 @@ def main():
 
 
     try:
-        df = pd.read_excel("/data/raw/train(1).xlsx")
+        df = pd.read_excel("data/raw/train(1).xlsx")
     except FileNotFoundError:
-        print("Error: train(1).xlsx not found in /data/raw/")
+        print("Error: train(1).xlsx not found in data/raw/")
         return
     
     print(f"Starting/Resuming download for {len(df)} images...")
