@@ -20,7 +20,7 @@ except ImportError:
 if not MAPBOX_TOKEN:
     raise ValueError("MAPBOX_ACCESS_TOKEN not found! Check Colab Secrets.")
 # Configuration for Mapbox
-SAVE_DIR = "data/satellite_images/"
+SAVE_DIR = "data/satellite_images"
 ZOOM = 17
 WIDTH, HEIGHT = 400, 400
 
