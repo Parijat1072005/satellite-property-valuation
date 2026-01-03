@@ -43,15 +43,19 @@ Now run the following commands one by one in the collaboratory's cells.
 
 
 
->>!pip install -r satellite-property-valuation/requirements.txt
+>>%cd satellite-property-valuation 
 
 
->>%run /content/satellite-property-valuation/src/data_fetcher.py
+
+>>!pip install -r requirements.txt
 
 
->>%run /content/satellite-property-valuation/src/preprocessing.ipynb
+>>%run /src/data_fetcher.py
 
 
->>%run /content/satellite-property-valuation/src/model_training.ipynb
+>>%run /src/preprocessing.ipynb
+
+
+>>%run /src/model_training.ipynb
 
 
