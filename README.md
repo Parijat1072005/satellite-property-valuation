@@ -6,7 +6,7 @@ NOTE: MAPBOX STATIC MAP API HAS BEEN USED SO GET THE API KEY OF THE SAME, AND US
 Follow the process to get it running in your laptop:
 
 
-Sign up for a free account at Mapbox and get an Access Token.
+Sign up for a free account at Mapbox "https://console.mapbox.com/account/access-tokens/" and get an Access Token.
 
 
 Create a google collab notebook.
