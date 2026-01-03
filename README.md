@@ -39,7 +39,7 @@ Put the dataset files inside the raw folder, you can find it in the repoitory's 
 
 
 
-Now run the following commands one by one in the collaboratory's cells.
+Now run the following commands one by one in the colaboratory's cells.
 
 
 
