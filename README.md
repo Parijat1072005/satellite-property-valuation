@@ -35,13 +35,13 @@ Follow the process to get it running in your laptop:
 Sign up for a free account at Mapbox "https://console.mapbox.com/account/access-tokens/" and get an Access Token.
 
 
-Create a google collab notebook.
+Create a google colab notebook.
 
 
 Select the runtime as t4 GPU.
 
 
-Click the key icon (Secrets) in the left-hand sidebar of Collab.
+Click the key icon (Secrets) in the left-hand sidebar of Colab.
 
 
 Add a new secret with the name MAPBOX_ACCESS_TOKEN and paste your token as the value.
