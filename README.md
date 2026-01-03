@@ -1,4 +1,30 @@
-# Satellite-Property-Valuation
+# Satellite Imagery-Based Property Valuation
+## Project Overview
+This project implements a Multimodal Deep Learning pipeline designed to estimate residential property values by combining traditional house specifications with spatial environmental context captured from satellite imagery.
+
+While traditional valuation models rely solely on tabular data (e.g., number of bedrooms, square footage), this model integrates high-resolution satellite tiles to "see" neighborhood quality, proximity to amenities, and green cover. By fusing these two distinct data modalities, the model captures visual nuances that are often missing from standard real estate spreadsheets.
+
+## Key Objectives
+**Automated Data Acquisition**: Programmatically fetch satellite imagery using the Mapbox Static Images API for thousands of properties.
+
+**Multimodal Fusion**: Develop a neural network that processes images via a Convolutional Neural Network (CNN) and tabular data via a Multi-Layer Perceptron (MLP).
+
+**Explainable AI (XAI)**: Utilize Grad-CAM (Gradient-weighted Class Activation Mapping) to visualize which visual features (like parks or road density) drive the model's price predictions.
+
+**Performance Benchmarking**: Compare the multimodal model against a tabular-only Random Forest baseline to measure the "value add" of visual data.
+
+## Technical Architecture
+**The system utilizes a Late-Fusion Architecture**:
+
+***Image Branch***: A pre-trained ResNet18 model acts as a feature extractor, converting satellite tiles into high-dimensional visual embeddings.
+
+***Tabular Branch***: A dense MLP processes features such as sqft_living, grade, and condition.
+
+***Concatenation Layer***: The outputs from both branches are "glued" together into a single feature vector.
+
+***Regression Head***: A final series of fully connected layers outputs the predicted property price.
+
+## Setup instructions:
 NOTE: MAPBOX STATIC MAP API HAS BEEN USED SO GET THE API KEY OF THE SAME, AND USE GOOGLE COLLAB TO RUN THE FILES.
 
 
