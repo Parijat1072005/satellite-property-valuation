@@ -50,12 +50,12 @@ Now run the following commands one by one in the collaboratory's cells.
 >>!pip install -r requirements.txt
 
 
->>%run /src/data_fetcher.py
+>>%run src/data_fetcher.py
 
 
->>%run /src/preprocessing.ipynb
+>>%run src/preprocessing.ipynb
 
 
->>%run /src/model_training.ipynb
+>>%run src/model_training.ipynb
 
 
